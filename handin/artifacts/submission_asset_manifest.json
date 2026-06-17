@@ -1,0 +1,135 @@
+{
+  "release_tag": "hackathon-submission-assets-v1",
+  "strategy": "Commit the small files in handin/artifacts/. Upload the large files in submission_assets/ as GitHub Release assets instead of committing them to Git.",
+  "tracked_artifacts": [
+    {
+      "name": "classmate_dataset_summary.json",
+      "path": "handin\\artifacts\\classmate_dataset_summary.json",
+      "source": "data\\classmate_dataset_summary.json",
+      "role": "tracked_evidence",
+      "exists": true,
+      "bytes": 833,
+      "sha256": "da9a45f968085cb479346cece3c162cb47fabb4d0990b4b56727ffc83fff5ee1"
+    },
+    {
+      "name": "own_dataset_summary.json",
+      "path": "handin\\artifacts\\own_dataset_summary.json",
+      "source": "data\\own_dataset_summary.json",
+      "role": "tracked_evidence",
+      "exists": true,
+      "bytes": 594,
+      "sha256": "1778ce336f8ebfb663765238d5b237ebffa09f387f0538bc1a6d4c1b3d998f57"
+    },
+    {
+      "name": "run_config.json",
+      "path": "handin\\artifacts\\run_config.json",
+      "source": "runs\\final-combined-gpu-qat-eval-continue\\run_config.json",
+      "role": "tracked_evidence",
+      "exists": true,
+      "bytes": 2044,
+      "sha256": "59a3da0f633fab3df21548df91abab1a5af52b767e04542e66d6818c1c475915"
+    },
+    {
+      "name": "metrics_history.json",
+      "path": "handin\\artifacts\\metrics_history.json",
+      "source": "runs\\final-combined-gpu-qat-eval-continue\\metrics_history.json",
+      "role": "tracked_evidence",
+      "exists": true,
+      "bytes": 18866,
+      "sha256": "23a7959d927b85af1cdf73bbbcada64525739007d81f9fb0744c94738f8fb2cc"
+    },
+    {
+      "name": "quantized_eval_history.json",
+      "path": "handin\\artifacts\\quantized_eval_history.json",
+      "source": "runs\\final-combined-gpu-qat-eval-continue\\quantized_eval_history.json",
+      "role": "tracked_evidence",
+      "exists": true,
+      "bytes": 8939,
+      "sha256": "6cb2d7fdd21e5c1c6c17cb9120e246f07b2c1e45775b6f79ea9dde6e4291d7a2"
+    },
+    {
+      "name": "quantization_summary.json",
+      "path": "handin\\artifacts\\quantization_summary.json",
+      "source": "runs\\final-combined-gpu-qat-eval-continue\\int8-best-quantized\\quantization_summary.json",
+      "role": "tracked_evidence",
+      "exists": true,
+      "bytes": 2267,
+      "sha256": "fd24976f429642fd27752a2eb7232770354e63c0de6f87957affc4c9b3618cbb"
+    },
+    {
+      "name": "test_metrics_float.json",
+      "path": "handin\\artifacts\\test_metrics_float.json",
+      "source": "runs\\final-combined-gpu-qat-eval-continue\\test_metrics_float.json",
+      "role": "tracked_evidence",
+      "exists": true,
+      "bytes": 671,
+      "sha256": "1a84d61fff7b3a9648489283a8570aff1f881f28c7b77900f0a710a744df216d"
+    }
+  ],
+  "release_assets": [
+    {
+      "name": "best.pt",
+      "path": "submission_assets\\best.pt",
+      "source": "runs\\final-combined-gpu-qat-eval-continue\\best.pt",
+      "role": "large_model_asset",
+      "exists": true,
+      "bytes": 113259727,
+      "sha256": "2a3b6800f2986a9f771cc849e58290f37cf5add14f6410edc9eeca0752637ddd"
+    },
+    {
+      "name": "best_quantized.pt",
+      "path": "submission_assets\\best_quantized.pt",
+      "source": "runs\\final-combined-gpu-qat-eval-continue\\best_quantized.pt",
+      "role": "large_model_asset",
+      "exists": true,
+      "bytes": 113281031,
+      "sha256": "522853cae7b66a6737044c62ad0e5789568abbc70f81a3aec2937635d8970c24"
+    },
+    {
+      "name": "model_int8_torchscript.pt",
+      "path": "submission_assets\\model_int8_torchscript.pt",
+      "source": "runs\\final-combined-gpu-qat-eval-continue\\int8-best-quantized\\model_int8_torchscript.pt",
+      "role": "large_model_asset",
+      "exists": true,
+      "bytes": 29124308,
+      "sha256": "002d717737b5f4d08721acd7b38da4de0c3dc23e5c7b5b4382181a9680fb8c35"
+    },
+    {
+      "name": "model_int8_state_dict.pt",
+      "path": "submission_assets\\model_int8_state_dict.pt",
+      "source": "runs\\final-combined-gpu-qat-eval-continue\\int8-best-quantized\\model_int8_state_dict.pt",
+      "role": "large_model_asset",
+      "exists": true,
+      "bytes": 28883659,
+      "sha256": "612306840fa3eab0666e546fa1653e45fe768e41a801ea1eeaf0d9701d2ba2f9"
+    },
+    {
+      "name": "hackathon_dataset_imagefolder.zip.part001",
+      "path": "submission_assets\\hackathon_dataset_imagefolder.zip.part001",
+      "source": null,
+      "role": "dataset_imagefolder_archive_part",
+      "exists": true,
+      "bytes": 1932735283,
+      "sha256": "1366222458ad73adaa8539d2bb9a10a5d108175f787eb7b4c3a5fb8b730034c5"
+    },
+    {
+      "name": "hackathon_dataset_imagefolder.zip.part002",
+      "path": "submission_assets\\hackathon_dataset_imagefolder.zip.part002",
+      "source": null,
+      "role": "dataset_imagefolder_archive_part",
+      "exists": true,
+      "bytes": 1932735283,
+      "sha256": "48082e03428d0e79fa7402d81e0e1e0a9d9d380c6540502c24cf3252f2269eca"
+    },
+    {
+      "name": "hackathon_dataset_imagefolder.zip.part003",
+      "path": "submission_assets\\hackathon_dataset_imagefolder.zip.part003",
+      "source": null,
+      "role": "dataset_imagefolder_archive_part",
+      "exists": true,
+      "bytes": 1704758629,
+      "sha256": "a1680811959df80924859547a22fd4e6191556b0036fec8bf2775ccfa370b386"
+    }
+  ],
+  "suggested_release_command": "gh release create hackathon-submission-assets-v1 (Get-ChildItem submission_assets -File).FullName --title \"Hackathon submission assets\" --notes \"Model checkpoints, int8 export, and dataset archive for the cds-108 hackathon submission.\""
+}

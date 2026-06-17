@@ -1,0 +1,29 @@
+{
+  "source_repo": "https://github.com/DotNaos/fs26-crosswalk-detector",
+  "source_release": "https://github.com/DotNaos/fs26-crosswalk-detector/releases/download/submission-dataset-v1/sam3-500k-static-metadata-v1.tar.gz",
+  "dataset_root": "data\\source\\classmate-static-datasets\\sam3-500k-masks-v1",
+  "output_dir": "data",
+  "raw_root": "data\\raw\\classmate",
+  "image_size": 250,
+  "positive_limit": 2500,
+  "negative_ratio": 1.0,
+  "min_confidence": 0.4,
+  "min_mask_coverage": 0.01,
+  "seed": 7,
+  "samples": 5000,
+  "counts": {
+    "train": {
+      "crossing": 2000,
+      "no_crossing": 2000
+    },
+    "val": {
+      "crossing": 250,
+      "no_crossing": 250
+    },
+    "test": {
+      "crossing": 250,
+      "no_crossing": 250
+    }
+  },
+  "manifest": "data\\classmate_dataset_manifest.csv"
+}

@@ -1,0 +1,28 @@
+{
+  "source_zip": "data\\svenzebradata.zip",
+  "data_root": "data",
+  "filename_prefix": "own_svenzebradata",
+  "seed": 108,
+  "split_ratios": {
+    "train": 0.8,
+    "val": 0.1,
+    "test": 0.1
+  },
+  "total_images": 51200,
+  "total_bytes": 5530653922,
+  "class_counts": {
+    "crossing": 17,
+    "no_crossing": 51183
+  },
+  "split_class_counts": {
+    "train/crossing": 14,
+    "train/no_crossing": 40946,
+    "val/crossing": 2,
+    "val/no_crossing": 5118,
+    "test/crossing": 1,
+    "test/no_crossing": 5119
+  },
+  "status_counts": {
+    "written": 51200
+  }
+}

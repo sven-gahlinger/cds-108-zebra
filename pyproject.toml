@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swissimage-crossing-detector"
+version = "0.1.0"
+description = "PyTorch transfer-learning scaffold for SwissImage pedestrian-crossing classification."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "certifi>=2026.0.0",
+    "pillow>=10.0",
+    "timm>=0.9",
+    "torch>=2.2",
+    "torchgeo>=0.9",
+    "torchvision>=0.17",
+    "tqdm>=4.66",
+]
+
+[project.scripts]
+crossing-import-own-data = "crossing_detector.import_own_zip_dataset:main"
+crossing-prepare-classmate-data = "crossing_detector.classmate_dataset:main"
+crossing-predict = "crossing_detector.predict:main"
+crossing-quantize-int8 = "crossing_detector.quantize:main"
+crossing-smoke = "crossing_detector.smoke_test:main"
+crossing-train = "crossing_detector.train:main"
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cu126", marker = "sys_platform == 'win32'" },
+]
+torchvision = [
+    { index = "pytorch-cu126", marker = "sys_platform == 'win32'" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true
+
+[tool.setuptools.packages.find]
+where = ["src"]

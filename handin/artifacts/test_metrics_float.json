@@ -1,0 +1,29 @@
+{
+  "checkpoint": "runs/final-combined-gpu-qat-eval-continue/best.pt",
+  "split": "test",
+  "counts": {
+    "negative": 5369,
+    "positive": 251
+  },
+  "loss_weight": [
+    1.0,
+    21.323734283447266
+  ],
+  "metrics": {
+    "loss": 0.025837806482332033,
+    "accuracy": 0.9928825622775801,
+    "precision": 0.9137254901960784,
+    "recall": 0.9282868525896414,
+    "f1": 0.9209486166007905,
+    "tp": 233,
+    "fp": 22,
+    "tn": 5347,
+    "fn": 18
+  },
+  "metadata": {
+    "checkpoint": "runs\\final-combined-gpu-qat-eval-continue\\best.pt",
+    "backbone": "fmow-resnet50",
+    "checkpoint_epoch": 6,
+    "checkpoint_stage": "layer4"
+  }
+}

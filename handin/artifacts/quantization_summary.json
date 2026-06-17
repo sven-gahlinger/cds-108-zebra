@@ -1,0 +1,82 @@
+{
+  "quantization": {
+    "method": "post_training_static_fx",
+    "dtype": "int8 weights / quantized activations, float32 output logits",
+    "device": "cpu",
+    "backend": "onednn",
+    "calibration_split": "train",
+    "calibration_samples_requested": 128,
+    "calibration_samples_used": 128,
+    "summary": {
+      "quantized_modules": {
+        "conv": 53,
+        "linear": 8,
+        "other": 3
+      },
+      "module_weight_dtypes": {
+        "torch.qint8": 57
+      }
+    }
+  },
+  "checkpoint": {
+    "checkpoint": "runs\\final-combined-gpu-qat-eval-continue\\best_quantized.pt",
+    "checkpoint_epoch": 6,
+    "checkpoint_stage": "layer4",
+    "checkpoint_val_metrics": {
+      "loss": 0.03684587485266281,
+      "accuracy": 0.9923487544483985,
+      "precision": 0.8884758364312267,
+      "recall": 0.9484126984126984,
+      "f1": 0.9174664107485604,
+      "tp": 239,
+      "fp": 30,
+      "tn": 5338,
+      "fn": 13
+    },
+    "positive_class": "crossing",
+    "backbone": "fmow-resnet50",
+    "dropout": 0.2
+  },
+  "data": {
+    "train_root": "data\\train",
+    "val_root": "data\\val",
+    "test_root": "data\\test",
+    "val_counts": {
+      "negative": 5368,
+      "positive": 252
+    },
+    "image_size": 250,
+    "positive_class": "crossing"
+  },
+  "metrics": {
+    "val": {
+      "loss": 0.13782589698601447,
+      "accuracy": 0.9580071174377224,
+      "precision": 1.0,
+      "recall": 0.06349206349206349,
+      "f1": 0.11940298507462686,
+      "tp": 16,
+      "fp": 0,
+      "tn": 5368,
+      "fn": 236
+    },
+    "test": {
+      "loss": 0.11063221926366731,
+      "accuracy": 0.9585409252669039,
+      "precision": 1.0,
+      "recall": 0.07171314741035857,
+      "f1": 0.1338289962825279,
+      "tp": 18,
+      "fp": 0,
+      "tn": 5369,
+      "fn": 233
+    }
+  },
+  "artifacts": {
+    "fx_graphmodule": null,
+    "fx_graphmodule_error": "AttributeError(\"'str' object has no attribute '__name__'\")",
+    "state_dict": "runs\\final-combined-gpu-qat-eval-continue\\int8-best-quantized\\model_int8_state_dict.pt",
+    "torchscript": "runs\\final-combined-gpu-qat-eval-continue\\int8-best-quantized\\model_int8_torchscript.pt",
+    "torchscript_error": null
+  }
+}

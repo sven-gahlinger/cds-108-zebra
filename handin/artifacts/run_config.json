@@ -1,0 +1,76 @@
+{
+  "data_root": "data",
+  "train_root": null,
+  "val_root": null,
+  "output_dir": "runs\\final-combined-gpu-qat-eval-continue",
+  "init_checkpoint": "runs\\final-combined-gpu-qat-eval\\last.pt",
+  "positive_class": "crossing",
+  "backbone": "fmow-resnet50",
+  "image_size": 250,
+  "batch_size": 32,
+  "num_workers": 0,
+  "dropout": 0.2,
+  "freeze_epochs": 0,
+  "finetune_epochs": 20,
+  "full_finetune_epochs": 0,
+  "lr_head": 6.25e-05,
+  "lr_backbone": 6.25e-06,
+  "lr_scheduler": "plateau",
+  "lr_aggression_decay": 0.08,
+  "lr_plateau_factor": 0.5,
+  "lr_plateau_patience": 2,
+  "lr_plateau_threshold": 0.001,
+  "lr_min": 1e-06,
+  "weight_decay": 0.0001,
+  "min_finetune_f1": 0.7,
+  "max_head_train_f1": 0.95,
+  "frozen_patience": 3,
+  "finetune_patience": 8,
+  "min_delta": 0.001,
+  "pos_weight": "auto",
+  "seed": 42,
+  "no_pretrained": false,
+  "qat_eval": true,
+  "qat_backend": "auto",
+  "qat_calibration_split": "train",
+  "qat_calibration_samples": 128,
+  "qat_eval_interval": 1,
+  "qat_dense_after_stage_epoch": 1,
+  "qat_reference_history": null,
+  "qat_dense_lookback": 1,
+  "data_roots": {
+    "train": "data\\train",
+    "val": "data\\val"
+  },
+  "train_counts": {
+    "negative": 42946,
+    "positive": 2014
+  },
+  "val_counts": {
+    "negative": 5368,
+    "positive": 252
+  },
+  "device": "cuda",
+  "class_weight_resolved": [
+    1.0,
+    21.323734283447266
+  ],
+  "backbone_description": "Recommended CNN: ResNet-50 pretrained on fMoW RGB remote-sensing imagery.",
+  "qat_dense_after_stage_epoch_resolved": 1,
+  "initial_checkpoint": {
+    "checkpoint": "runs\\final-combined-gpu-qat-eval\\last.pt",
+    "checkpoint_epoch": 24,
+    "checkpoint_stage": "layer4",
+    "checkpoint_val_metrics": {
+      "loss": 0.029545334108479593,
+      "accuracy": 0.9900355871886121,
+      "precision": 0.8333333333333334,
+      "recall": 0.9722222222222222,
+      "f1": 0.8974358974358975,
+      "tp": 245,
+      "fp": 49,
+      "tn": 5319,
+      "fn": 7
+    }
+  }
+}

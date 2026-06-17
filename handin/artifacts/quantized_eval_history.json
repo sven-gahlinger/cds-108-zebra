@@ -1,0 +1,408 @@
+[
+  {
+    "epoch": 1,
+    "stage": "layer4",
+    "stage_epoch": 1,
+    "reason": "dense_after_stage_epoch_1",
+    "backend": "onednn",
+    "calibration_samples": 128,
+    "summary": {
+      "quantized_modules": {
+        "conv": 53,
+        "linear": 8,
+        "other": 3
+      },
+      "module_weight_dtypes": {
+        "torch.qint8": 57
+      }
+    },
+    "val": {
+      "loss": 0.13619537294123096,
+      "accuracy": 0.9565836298932384,
+      "precision": 1.0,
+      "recall": 0.031746031746031744,
+      "f1": 0.06153846153846154,
+      "tp": 8,
+      "fp": 0,
+      "tn": 5368,
+      "fn": 244
+    }
+  },
+  {
+    "epoch": 2,
+    "stage": "layer4",
+    "stage_epoch": 2,
+    "reason": "dense_after_stage_epoch_1",
+    "backend": "onednn",
+    "calibration_samples": 128,
+    "summary": {
+      "quantized_modules": {
+        "conv": 53,
+        "linear": 8,
+        "other": 3
+      },
+      "module_weight_dtypes": {
+        "torch.qint8": 57
+      }
+    },
+    "val": {
+      "loss": 0.11606280684895363,
+      "accuracy": 0.958185053380783,
+      "precision": 1.0,
+      "recall": 0.06746031746031746,
+      "f1": 0.12639405204460966,
+      "tp": 17,
+      "fp": 0,
+      "tn": 5368,
+      "fn": 235
+    }
+  },
+  {
+    "epoch": 3,
+    "stage": "layer4",
+    "stage_epoch": 3,
+    "reason": "dense_after_stage_epoch_1",
+    "backend": "onednn",
+    "calibration_samples": 128,
+    "summary": {
+      "quantized_modules": {
+        "conv": 53,
+        "linear": 8,
+        "other": 3
+      },
+      "module_weight_dtypes": {
+        "torch.qint8": 57
+      }
+    },
+    "val": {
+      "loss": 0.10284331201234322,
+      "accuracy": 0.9612099644128114,
+      "precision": 1.0,
+      "recall": 0.1349206349206349,
+      "f1": 0.23776223776223776,
+      "tp": 34,
+      "fp": 0,
+      "tn": 5368,
+      "fn": 218
+    }
+  },
+  {
+    "epoch": 4,
+    "stage": "layer4",
+    "stage_epoch": 4,
+    "reason": "dense_after_stage_epoch_1",
+    "backend": "onednn",
+    "calibration_samples": 128,
+    "summary": {
+      "quantized_modules": {
+        "conv": 53,
+        "linear": 8,
+        "other": 3
+      },
+      "module_weight_dtypes": {
+        "torch.qint8": 57
+      }
+    },
+    "val": {
+      "loss": 0.09849022495364804,
+      "accuracy": 0.9649466192170818,
+      "precision": 1.0,
+      "recall": 0.21825396825396826,
+      "f1": 0.3583061889250814,
+      "tp": 55,
+      "fp": 0,
+      "tn": 5368,
+      "fn": 197
+    }
+  },
+  {
+    "epoch": 5,
+    "stage": "layer4",
+    "stage_epoch": 5,
+    "reason": "dense_after_stage_epoch_1",
+    "backend": "onednn",
+    "calibration_samples": 128,
+    "summary": {
+      "quantized_modules": {
+        "conv": 53,
+        "linear": 8,
+        "other": 3
+      },
+      "module_weight_dtypes": {
+        "torch.qint8": 57
+      }
+    },
+    "val": {
+      "loss": 0.10633698010359795,
+      "accuracy": 0.9649466192170818,
+      "precision": 1.0,
+      "recall": 0.21825396825396826,
+      "f1": 0.3583061889250814,
+      "tp": 55,
+      "fp": 0,
+      "tn": 5368,
+      "fn": 197
+    }
+  },
+  {
+    "epoch": 6,
+    "stage": "layer4",
+    "stage_epoch": 6,
+    "reason": "dense_after_stage_epoch_1",
+    "backend": "onednn",
+    "calibration_samples": 128,
+    "summary": {
+      "quantized_modules": {
+        "conv": 53,
+        "linear": 8,
+        "other": 3
+      },
+      "module_weight_dtypes": {
+        "torch.qint8": 57
+      }
+    },
+    "val": {
+      "loss": 0.11239118576049804,
+      "accuracy": 0.9683274021352313,
+      "precision": 1.0,
+      "recall": 0.29365079365079366,
+      "f1": 0.4539877300613497,
+      "tp": 74,
+      "fp": 0,
+      "tn": 5368,
+      "fn": 178
+    }
+  },
+  {
+    "epoch": 7,
+    "stage": "layer4",
+    "stage_epoch": 7,
+    "reason": "dense_after_stage_epoch_1",
+    "backend": "onednn",
+    "calibration_samples": 128,
+    "summary": {
+      "quantized_modules": {
+        "conv": 53,
+        "linear": 8,
+        "other": 3
+      },
+      "module_weight_dtypes": {
+        "torch.qint8": 57
+      }
+    },
+    "val": {
+      "loss": 0.11041002315982805,
+      "accuracy": 0.9622775800711744,
+      "precision": 1.0,
+      "recall": 0.15873015873015872,
+      "f1": 0.27397260273972607,
+      "tp": 40,
+      "fp": 0,
+      "tn": 5368,
+      "fn": 212
+    }
+  },
+  {
+    "epoch": 8,
+    "stage": "layer4",
+    "stage_epoch": 8,
+    "reason": "dense_after_stage_epoch_1",
+    "backend": "onednn",
+    "calibration_samples": 128,
+    "summary": {
+      "quantized_modules": {
+        "conv": 53,
+        "linear": 8,
+        "other": 3
+      },
+      "module_weight_dtypes": {
+        "torch.qint8": 57
+      }
+    },
+    "val": {
+      "loss": 0.10617336828089269,
+      "accuracy": 0.9622775800711744,
+      "precision": 1.0,
+      "recall": 0.15873015873015872,
+      "f1": 0.27397260273972607,
+      "tp": 40,
+      "fp": 0,
+      "tn": 5368,
+      "fn": 212
+    }
+  },
+  {
+    "epoch": 9,
+    "stage": "layer4",
+    "stage_epoch": 9,
+    "reason": "dense_after_stage_epoch_1",
+    "backend": "onednn",
+    "calibration_samples": 128,
+    "summary": {
+      "quantized_modules": {
+        "conv": 53,
+        "linear": 8,
+        "other": 3
+      },
+      "module_weight_dtypes": {
+        "torch.qint8": 57
+      }
+    },
+    "val": {
+      "loss": 0.11866237175422206,
+      "accuracy": 0.956049822064057,
+      "precision": 1.0,
+      "recall": 0.01984126984126984,
+      "f1": 0.038910505836575876,
+      "tp": 5,
+      "fp": 0,
+      "tn": 5368,
+      "fn": 247
+    }
+  },
+  {
+    "epoch": 10,
+    "stage": "layer4",
+    "stage_epoch": 10,
+    "reason": "dense_after_stage_epoch_1",
+    "backend": "onednn",
+    "calibration_samples": 128,
+    "summary": {
+      "quantized_modules": {
+        "conv": 53,
+        "linear": 8,
+        "other": 3
+      },
+      "module_weight_dtypes": {
+        "torch.qint8": 57
+      }
+    },
+    "val": {
+      "loss": 0.11472226954015549,
+      "accuracy": 0.9583629893238435,
+      "precision": 1.0,
+      "recall": 0.07142857142857142,
+      "f1": 0.13333333333333333,
+      "tp": 18,
+      "fp": 0,
+      "tn": 5368,
+      "fn": 234
+    }
+  },
+  {
+    "epoch": 11,
+    "stage": "layer4",
+    "stage_epoch": 11,
+    "reason": "dense_after_stage_epoch_1",
+    "backend": "onednn",
+    "calibration_samples": 128,
+    "summary": {
+      "quantized_modules": {
+        "conv": 53,
+        "linear": 8,
+        "other": 3
+      },
+      "module_weight_dtypes": {
+        "torch.qint8": 57
+      }
+    },
+    "val": {
+      "loss": 0.13383792244242604,
+      "accuracy": 0.9565836298932384,
+      "precision": 1.0,
+      "recall": 0.031746031746031744,
+      "f1": 0.06153846153846154,
+      "tp": 8,
+      "fp": 0,
+      "tn": 5368,
+      "fn": 244
+    }
+  },
+  {
+    "epoch": 12,
+    "stage": "layer4",
+    "stage_epoch": 12,
+    "reason": "dense_after_stage_epoch_1",
+    "backend": "onednn",
+    "calibration_samples": 128,
+    "summary": {
+      "quantized_modules": {
+        "conv": 53,
+        "linear": 8,
+        "other": 3
+      },
+      "module_weight_dtypes": {
+        "torch.qint8": 57
+      }
+    },
+    "val": {
+      "loss": 0.1437493627181681,
+      "accuracy": 0.9565836298932384,
+      "precision": 1.0,
+      "recall": 0.031746031746031744,
+      "f1": 0.06153846153846154,
+      "tp": 8,
+      "fp": 0,
+      "tn": 5368,
+      "fn": 244
+    }
+  },
+  {
+    "epoch": 13,
+    "stage": "layer4",
+    "stage_epoch": 13,
+    "reason": "dense_after_stage_epoch_1",
+    "backend": "onednn",
+    "calibration_samples": 128,
+    "summary": {
+      "quantized_modules": {
+        "conv": 53,
+        "linear": 8,
+        "other": 3
+      },
+      "module_weight_dtypes": {
+        "torch.qint8": 57
+      }
+    },
+    "val": {
+      "loss": 0.12104989150240753,
+      "accuracy": 0.9599644128113879,
+      "precision": 1.0,
+      "recall": 0.10714285714285714,
+      "f1": 0.19354838709677416,
+      "tp": 27,
+      "fp": 0,
+      "tn": 5368,
+      "fn": 225
+    }
+  },
+  {
+    "epoch": 14,
+    "stage": "layer4",
+    "stage_epoch": 14,
+    "reason": "dense_after_stage_epoch_1",
+    "backend": "onednn",
+    "calibration_samples": 128,
+    "summary": {
+      "quantized_modules": {
+        "conv": 53,
+        "linear": 8,
+        "other": 3
+      },
+      "module_weight_dtypes": {
+        "torch.qint8": 57
+      }
+    },
+    "val": {
+      "loss": 0.11019809186670704,
+      "accuracy": 0.9562277580071175,
+      "precision": 1.0,
+      "recall": 0.023809523809523808,
+      "f1": 0.046511627906976744,
+      "tp": 6,
+      "fp": 0,
+      "tn": 5368,
+      "fn": 246
+    }
+  }
+]

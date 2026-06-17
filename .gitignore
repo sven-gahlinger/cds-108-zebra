@@ -1,0 +1,13 @@
+.venv/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+data/
+runs/
+submission_assets/
+*.pt
+
+# Local planning notes, not part of the final university hand-in.
+handin/User_Input_Needed.md
