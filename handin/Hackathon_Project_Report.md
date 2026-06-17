@@ -138,6 +138,11 @@ Best float32 checkpoint:
 runs/final-combined-gpu-qat-eval-continue/best.pt
 ```
 
+The final checkpoint, quantization artifacts, and split dataset archive are
+published as GitHub Release assets:
+
+https://github.com/sven-gahlinger/cds-108-zebra/releases/tag/hackathon-submission-assets
+
 Validation metrics for the best float32 checkpoint:
 
 | Metric | Value |

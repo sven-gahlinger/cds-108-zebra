@@ -256,6 +256,10 @@ The float32 model is the final usable model. The int8 export is kept as an optim
 
 Small evidence files should be committed to Git. Large generated assets should be uploaded as GitHub Release assets instead of being committed directly.
 
+The published hand-in assets are available in the GitHub Release:
+
+https://github.com/sven-gahlinger/cds-108-zebra/releases/tag/hackathon-submission-assets
+
 Prepare the tracked hand-in evidence:
 
 ```powershell
@@ -281,7 +285,7 @@ This writes large files under `submission_assets/`, which is ignored by Git:
 Upload those files to a GitHub Release, for example:
 
 ```powershell
-gh release create hackathon-submission-assets-v1 (Get-ChildItem submission_assets -File).FullName `
+gh release create hackathon-submission-assets (Get-ChildItem submission_assets -File).FullName `
   --title "Hackathon submission assets" `
   --notes "Model checkpoints, int8 export, and dataset archive for the cds-108 hackathon submission."
 ```

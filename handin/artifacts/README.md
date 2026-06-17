@@ -2,6 +2,10 @@
 
 This folder contains small, tracked evidence files for the hackathon report.
 
+The published large assets are available here:
+
+https://github.com/sven-gahlinger/cds-108-zebra/releases/tag/hackathon-submission-assets
+
 Large binary assets are intentionally not committed to Git:
 
 - float32 model checkpoints (`best.pt`, `best_quantized.pt`)
